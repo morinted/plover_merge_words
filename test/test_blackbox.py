@@ -40,3 +40,12 @@ class TestsBlackbox:
 
         TEFT/-FT/-FT  " test of the"
         '''
+
+    def test_merge_incremental_merges(self):
+        r'''
+        "H-L": "hello",
+        "KW-L": "{:merge: =}",
+        "KW-LS": "{:merge: ==}"
+
+        H-L/KW-L/KW-LS  " hello =="
+        '''

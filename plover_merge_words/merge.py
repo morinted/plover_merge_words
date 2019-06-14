@@ -47,6 +47,8 @@ def merge(ctx, cmdline):
     if output:
         action.text = output
         action.next_attach = False
+        if len(output) < len(new_text):
+            action.prev_attach = True
 
     # TODO: Add to action.word
 
